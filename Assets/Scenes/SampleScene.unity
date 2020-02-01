@@ -132,9 +132,10 @@ GameObject:
   - component: {fileID: 26057185}
   - component: {fileID: 26057187}
   - component: {fileID: 26057186}
+  - component: {fileID: 26057188}
   m_Layer: 0
   m_Name: Point 2
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26057184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45, y: -14.17, z: 0}
+  m_LocalPosition: {x: 1.45, y: -13.28, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 541002012}
@@ -229,6 +230,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49661684, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &26057188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26057184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363f9b3718a1644d9c7274135412666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 478815292}
 --- !u!1 &65537155
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +858,10 @@ GameObject:
   - component: {fileID: 478815289}
   - component: {fileID: 478815291}
   - component: {fileID: 478815290}
+  - component: {fileID: 478815292}
   m_Layer: 0
   m_Name: Point 1
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -859,7 +874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478815288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56, y: -5.52, z: 0}
+  m_LocalPosition: {x: 0.56, y: -2.68, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 541002012}
@@ -941,6 +956,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49661684, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &478815292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478815288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363f9b3718a1644d9c7274135412666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 26057188}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,7 +1063,7 @@ GameObject:
   - component: {fileID: 541002012}
   m_Layer: 0
   m_Name: Elevator 1
-  m_TagString: Elevator
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1728,9 +1756,10 @@ GameObject:
   - component: {fileID: 1378433042}
   - component: {fileID: 1378433044}
   - component: {fileID: 1378433043}
+  - component: {fileID: 1378433045}
   m_Layer: 0
   m_Name: Point 2
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1743,7 +1772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378433041}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45, y: -14.17, z: 0}
+  m_LocalPosition: {x: 1.45, y: -11.78, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1662064138}
@@ -1825,6 +1854,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49661684, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1378433045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378433041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363f9b3718a1644d9c7274135412666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 2099002401}
 --- !u!1 &1481668489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +2007,7 @@ GameObject:
   - component: {fileID: 1662064138}
   m_Layer: 0
   m_Name: Elevator 2
-  m_TagString: Elevator
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2180,7 +2222,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2071023207}
-  - component: {fileID: 2071023208}
   m_Layer: 0
   m_Name: HoldZone
   m_TagString: Untagged
@@ -2202,32 +2243,6 @@ Transform:
   m_Father: {fileID: 355048605}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2071023208
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071023206}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2099002397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,9 +2254,10 @@ GameObject:
   - component: {fileID: 2099002398}
   - component: {fileID: 2099002400}
   - component: {fileID: 2099002399}
+  - component: {fileID: 2099002401}
   m_Layer: 0
   m_Name: Point 1
-  m_TagString: Untagged
+  m_TagString: Elevator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2254,7 +2270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099002397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.56, y: -5.52, z: 0}
+  m_LocalPosition: {x: 1.26, y: -1.97, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1662064138}
@@ -2336,6 +2352,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49661684, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2099002401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099002397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a363f9b3718a1644d9c7274135412666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  other: {fileID: 1378433045}
 --- !u!1 &2133878323
 GameObject:
   m_ObjectHideFlags: 0

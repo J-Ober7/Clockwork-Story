@@ -10,8 +10,7 @@ public class PlayerInteract: MonoBehaviour {
     private GameObject cogHeld = null;
     private Transform oldCogHeldTransform = null;
     private GameObject interactable = null;
-    private GameObject activateable = null;
-
+    private ElevatorTeleporter elevator = null;
 
     // Start is called before the first frame update
     void Start() {
@@ -40,12 +39,11 @@ public class PlayerInteract: MonoBehaviour {
                 else {
                     cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
                 }
-
-
-
+            }
+            if (elevator != null) {
+                transform.position = elevator.other.transform.position;
             }
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
@@ -56,19 +54,22 @@ public class PlayerInteract: MonoBehaviour {
             interactable = collision.gameObject;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
-            activateable = collision.gameObject;
+            elevator = collision.gameObject.GetComponent<ElevatorTeleporter>();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("PickUp")) {
-            pickUp = null;
+            if (collision.gameObject == pickUp)
+                pickUp = null;
         }
         if (collision.gameObject.CompareTag("Interactable")) {
-            interactable = collision.gameObject;
+            if(collision.gameObject == interactable)
+                interactable = null;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
-            activateable = null;
+            if(collision.gameObject.GetComponent<ElevatorTeleporter>() == elevator)
+                elevator = null;
         }
     }
 }
