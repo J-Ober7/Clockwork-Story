@@ -9,10 +9,15 @@ public class LevelController : MonoBehaviour
     private int E1Level;
     private int E2Level;
     private bool bellLocked;
+    private int lockLevel;
     // Start is called before the first frame update
     void Start()
     {
-        
+        bellLevel = 0;
+        E1Level = 0;
+        E2Level = 0;
+        lockLevel = 0;
+
     }
 
     // Update is called once per frame
@@ -24,38 +29,51 @@ public class LevelController : MonoBehaviour
     public void Increase(string ID) {
 
         if (ID.Equals("Bell")) {
+            bellLevel++;
 
-        }else if (ID.Equals("BL")) {
+        }
+        else if (ID.Equals("BL")) {
+            bellLocked = true;
+            lockLevel = bellLevel;
 
-        }else if (ID.Equals("E1")) {
-
-        }else if (ID.Equals("E2")) {
-
-        }else if (ID.Equals("Bell")) {
-
+        }
+        else if (ID.Equals("E1")) {
+            E1Level++;
+        }
+        else if (ID.Equals("E2")) {
+            E2Level++;
+        }
+        else if (ID.Equals("ED")) {
+            E1Level++;
+            E2Level++;
         }
     }
     public bool Decrease(string ID) {
         if (ID.Equals("Bell")) {
-            if (!bellLocked) {
-                bellLevel--;
-            }
-            else {
-                return false;
-            }
+            bellLevel--;
 
         }
         else if (ID.Equals("BL")) {
-
+            if (bellLocked) {
+                if(bellLevel == lockLevel) {
+                    bellLocked = false;
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            }
+            
         }
         else if (ID.Equals("E1")) {
-
+            E1Level--;
         }
         else if (ID.Equals("E2")) {
-
+            E2Level--;
         }
-        else if (ID.Equals("Bell")) {
-
+        else if (ID.Equals("ED")) {
+            E1Level--;
+            E2Level--;
         }
 
         return true;
