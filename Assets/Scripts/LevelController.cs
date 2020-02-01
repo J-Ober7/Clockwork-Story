@@ -10,6 +10,10 @@ public class LevelController : MonoBehaviour
     private int E2Level;
     private bool bellLocked;
     private int lockLevel;
+
+    public GameObject Bell;
+    public GameObject Elevator1;
+    public GameObject Elevator2;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,9 +43,11 @@ public class LevelController : MonoBehaviour
         }
         else if (ID.Equals("E1")) {
             E1Level++;
+            Elevator1.SetActive(true);
         }
         else if (ID.Equals("E2")) {
             E2Level++;
+            Elevator2.SetActive(true);
         }
         else if (ID.Equals("ED")) {
             E1Level++;
@@ -67,13 +73,25 @@ public class LevelController : MonoBehaviour
         }
         else if (ID.Equals("E1")) {
             E1Level--;
+            if (E1Level < 1) {
+                Elevator1.SetActive(false);
+            }
         }
         else if (ID.Equals("E2")) {
             E2Level--;
+            if(E2Level < 1) {
+                Elevator2.SetActive(false);
+            }
         }
         else if (ID.Equals("ED")) {
             E1Level--;
             E2Level--;
+            if (E1Level < 1) {
+                Elevator1.SetActive(false);
+            }
+            if (E2Level < 1) {
+                Elevator2.SetActive(false);
+            }
         }
 
         return true;
