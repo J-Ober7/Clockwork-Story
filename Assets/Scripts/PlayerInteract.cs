@@ -41,7 +41,8 @@ public class PlayerInteract: MonoBehaviour {
                 }
             }
             if (elevator != null) {
-                transform.position = elevator.other.transform.position;
+                Vector3 elevatorPosition = elevator.other.transform.position;
+                transform.position = new Vector3(elevatorPosition.x, elevatorPosition.y, transform.position.z);
             }
         }
     }
