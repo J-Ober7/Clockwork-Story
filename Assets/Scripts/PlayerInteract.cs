@@ -60,7 +60,6 @@ public class PlayerInteract: MonoBehaviour {
             interactable = collision.gameObject;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
-            Debug.Log("Ele");
             elevator = collision.gameObject.GetComponent<ElevatorTeleporter>();
         }
     }
