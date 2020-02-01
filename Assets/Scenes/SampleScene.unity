@@ -425,7 +425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a94e177bc58d24eb67b930c59237a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUp: {fileID: 0}
 --- !u!1 &372904643
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,9 +679,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 548576037}
+  - component: {fileID: 548576038}
   m_Layer: 0
   m_Name: Bell Switch F2
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -695,13 +695,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548576036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.5, y: 7.6100006, z: 0}
+  m_LocalPosition: {x: 6.5, y: 7.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464689756}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548576038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548576036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: Bell
+  hint: 
+  lvlc: {fileID: 706260647}
 --- !u!1 &549853040
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,9 +807,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 653555026}
+  - component: {fileID: 653555027}
   m_Layer: 0
   m_Name: Lock Bell Switch
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,6 +829,64 @@ Transform:
   - {fileID: 894897480}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653555027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653555025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: BL
+  hint: 
+  lvlc: {fileID: 706260647}
+--- !u!1 &706260646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706260648}
+  - component: {fileID: 706260647}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &706260647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706260646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63cd05b326f981143821d1b581458d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &706260648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706260646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.77, y: 1.7219934, z: 3.4609375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718027891
 GameObject:
@@ -1196,9 +1270,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135914983}
+  - component: {fileID: 1135914984}
   m_Layer: 0
   m_Name: Bell Switch F1
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1218,6 +1293,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1135914984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135914982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: Bell
+  hint: 
+  lvlc: {fileID: 706260647}
 --- !u!1 &1332593582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,9 +1317,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332593583}
+  - component: {fileID: 1332593584}
   m_Layer: 0
   m_Name: Elevator F2 Switch
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1242,13 +1333,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332593582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.59, y: 7.61, z: 0}
+  m_LocalPosition: {x: -16.59, y: 7.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 549853041}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1332593584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332593582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: E2
+  hint: 
+  lvlc: {fileID: 706260647}
 --- !u!1 &1549563238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,9 +1364,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1549563239}
+  - component: {fileID: 1549563240}
   m_Layer: 0
   m_Name: Dbl Elevator Switch
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1273,13 +1380,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549563238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.48, y: 7.6100006, z: 0}
+  m_LocalPosition: {x: -4.48, y: 7.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 718027892}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1549563240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549563238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: ED
+  hint: 
+  lvlc: {fileID: 706260647}
 --- !u!1 &1867065397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,9 +1708,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2022866497}
+  - component: {fileID: 2022866498}
   m_Layer: 0
   m_Name: Elevator F1 Switch
-  m_TagString: Untagged
+  m_TagString: Iteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1608,6 +1731,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2022866498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022866496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655262522210325498ff16119c667a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: E1
+  hint: 
+  lvlc: {fileID: 706260647}
 --- !u!1 &2133878323
 GameObject:
   m_ObjectHideFlags: 0
