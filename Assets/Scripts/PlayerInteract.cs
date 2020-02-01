@@ -39,6 +39,7 @@ public class PlayerInteract: MonoBehaviour {
                 else {
                     cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
                     if(cogHeld != null) {
+                        cogHeld.GetComponent<BoxCollider2D>().enabled = true;
                         cogHeld.transform.parent = transform;
                         cogHeld.transform.position = holdZone.transform.position;
                     }
@@ -59,6 +60,7 @@ public class PlayerInteract: MonoBehaviour {
             interactable = collision.gameObject;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
+            Debug.Log("Ele");
             elevator = collision.gameObject.GetComponent<ElevatorTeleporter>();
         }
     }

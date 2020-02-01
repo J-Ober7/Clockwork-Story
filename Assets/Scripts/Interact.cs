@@ -28,6 +28,7 @@ public class Interact : MonoBehaviour
             cog = givenCog;
             hasCog = true;
             lvlc.Increase(ID);
+            cog.GetComponent<BoxCollider2D>().enabled = false;
             cog.transform.parent = transform;
             cog.transform.position = transform.position;
         }
