@@ -6,9 +6,11 @@ public class BellController : MonoBehaviour
 {
     private int bellLevel;
     private bool bellLocked;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         bellLevel = 0;
         bellLocked = false;
         
@@ -29,6 +31,7 @@ public class BellController : MonoBehaviour
     public void updateBell(int level) {
         if (!bellLocked) {
             bellLevel = level;
+            anim.SetInteger("Bell Level", bellLevel);
         }
     }
 }

@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
     public BellController Bell;
     public GameObject Elevator1;
     public GameObject Elevator2;
+    public static bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
