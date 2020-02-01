@@ -33,7 +33,10 @@ public class PlayerInteract: MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E)) {
             if(interactable != null) {
                 if(cogHeld != null) {
-                    cogHeld = interactable.GetComponent<Interact>().
+                    cogHeld = interactable.GetComponent<Interact>().TurnOn(cogHeld);
+                }
+                else {
+                    cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
                 }
 
 
