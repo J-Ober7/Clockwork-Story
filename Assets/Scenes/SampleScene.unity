@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a94e177bc58d24eb67b930c59237a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUp: {fileID: 0}
+  holdZone: {fileID: 2071023206}
 --- !u!1 &357246770
 GameObject:
   m_ObjectHideFlags: 0
