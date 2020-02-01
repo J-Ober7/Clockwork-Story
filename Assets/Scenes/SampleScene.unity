@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseVelocity: 10
+  jumpPower: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1055737946}
   - component: {fileID: 1055737945}
+  - component: {fileID: 1055737947}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -572,6 +574,27 @@ Transform:
   m_Father: {fileID: 344331455}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1055737947
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055737944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 2.5567086, y: 2.560435}
+  - {x: -2.560154, y: 2.560417}
+  - {x: -2.5586064, y: -2.560276}
+  - {x: 2.5554345, y: -2.5685165}
+  - {x: 2.5586405, y: 2.5620668}
 --- !u!1 &1867065397
 GameObject:
   m_ObjectHideFlags: 0
