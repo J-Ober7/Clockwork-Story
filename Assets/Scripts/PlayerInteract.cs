@@ -4,8 +4,9 @@ using UnityEngine;
 
 
 public class PlayerInteract: MonoBehaviour {
-    public GameObject pickUp;
+    public GameObject holdZone;
 
+    private GameObject pickUp = null;
     private GameObject cogHeld = null;
     private Transform oldCogHeldTransform = null;
     private GameObject interactable = null;
@@ -26,6 +27,7 @@ public class PlayerInteract: MonoBehaviour {
                 cogHeld = pickUp;
                 oldCogHeldTransform = cogHeld.transform.parent;
                 cogHeld.transform.parent = transform;
+                cogHeld.transform.position = holdZone.transform.position;
                 pickUp = null;
             }
         }
