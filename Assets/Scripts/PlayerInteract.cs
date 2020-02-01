@@ -8,6 +8,7 @@ public class PlayerInteract: MonoBehaviour {
 
     private GameObject cogHeld = null;
     private Transform oldCogHeldTransform = null;
+    private GameObject interactable = null;
 
     // Start is called before the first frame update
     void Start() {
