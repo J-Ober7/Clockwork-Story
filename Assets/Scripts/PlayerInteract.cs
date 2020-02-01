@@ -9,6 +9,8 @@ public class PlayerInteract: MonoBehaviour {
     private GameObject cogHeld = null;
     private Transform oldCogHeldTransform = null;
     private GameObject interactable = null;
+    private GameObject activateable = null;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -30,7 +32,9 @@ public class PlayerInteract: MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E)) {
             if(interactable != null) {
-
+                if(cogHeld != null) {
+                    cogHeld = interactable.GetComponent<Interact>().
+                }
 
 
 
@@ -46,6 +50,9 @@ public class PlayerInteract: MonoBehaviour {
         if (collision.gameObject.CompareTag("Interactable")) {
             interactable = collision.gameObject;
         }
+        if (collision.gameObject.CompareTag("Elevator")) {
+            activateable = collision.gameObject;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
@@ -53,7 +60,10 @@ public class PlayerInteract: MonoBehaviour {
             pickUp = null;
         }
         if (collision.gameObject.CompareTag("Interactable")) {
-            interactable = null;
+            interactable = collision.gameObject;
+        }
+        if (collision.gameObject.CompareTag("Elevator")) {
+            activateable = null;
         }
     }
 }

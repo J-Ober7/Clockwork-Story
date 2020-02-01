@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PickUp
-  - Iteractable
   - Elevator
+  - Interactable
   layers:
   - Default
   - TransparentFX
