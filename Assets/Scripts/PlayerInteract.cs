@@ -38,6 +38,10 @@ public class PlayerInteract: MonoBehaviour {
                 }
                 else {
                     cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
+                    if(cogHeld != null) {
+                        cogHeld.transform.parent = transform;
+                        cogHeld.transform.position = holdZone.transform.position;
+                    }
                 }
             }
             if (elevator != null) {

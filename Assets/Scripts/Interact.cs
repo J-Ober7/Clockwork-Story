@@ -28,6 +28,8 @@ public class Interact : MonoBehaviour
             cog = givenCog;
             hasCog = true;
             lvlc.Increase(ID);
+            cog.transform.parent = transform;
+            cog.transform.position = transform.position;
         }
         else {
             return givenCog;
