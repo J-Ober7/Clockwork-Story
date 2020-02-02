@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
@@ -50,6 +51,8 @@ public class LevelController : MonoBehaviour
         gameWin = false;
         musicState = FMODUnity.RuntimeManager.CreateInstance(BackMusic);
         musicState.start();
+        ambState = FMODUnity.RuntimeManager.CreateInstance(Ambiance);
+        ambState.start();
 
     }
 
@@ -112,8 +115,11 @@ public class LevelController : MonoBehaviour
         else if (ID.Equals("Ring")) {
             if(bellLevel == 2 || lockLevel == 2) {
                 gameWin = true;
+                musicState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                ambState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 Bell.gameOverBell();
                 FMODUnity.RuntimeManager.PlayOneShot(BellRing);
+                StartCoroutine(TemporarilyDeactivate(13f));
 
             }
         }
@@ -169,5 +175,9 @@ public class LevelController : MonoBehaviour
         }
 
         return true;
+    }
+    private IEnumerator TemporarilyDeactivate(float duration) {
+        yield return new WaitForSeconds(duration);
+        SceneManager.LoadScene("EndScreen");
     }
 }

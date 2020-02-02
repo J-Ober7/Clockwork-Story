@@ -9,7 +9,8 @@ public class PlayerInteract: MonoBehaviour {
     public GameObject holdZone;
     public TextMeshProUGUI t;
     public Image tImage;
-    public GameObject WinText;
+    public TextMeshProUGUI WinText;
+    public Image wImage;
     [FMODUnity.EventRef]
     public string GearDrop = "";
     [FMODUnity.EventRef]
@@ -26,7 +27,8 @@ public class PlayerInteract: MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        WinText.SetActive(false);
+        WinText.enabled = false;
+        wImage.enabled = false;
     }
 
     // Update is called once per frame
@@ -76,7 +78,8 @@ public class PlayerInteract: MonoBehaviour {
                 tImage.enabled = false;
             }
 
-            WinText.SetActive(true);
+            WinText.enabled = true;
+            wImage.enabled = true;
         }
 
     }
