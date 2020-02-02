@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class PlayerInteract: MonoBehaviour {
     public GameObject holdZone;
+    public  Text t;
 
     private GameObject pickUp = null;
     private GameObject cogHeld = null;
     private Transform oldCogHeldTransform = null;
     private GameObject interactable = null;
     private ElevatorTeleporter elevator = null;
+    
 
     // Start is called before the first frame update
     void Start() {
@@ -58,6 +61,7 @@ public class PlayerInteract: MonoBehaviour {
         }
         if (collision.gameObject.CompareTag("Interactable")) {
             interactable = collision.gameObject;
+            t.text = collision.gameObject.GetComponent<Interact>().hint;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
             elevator = collision.gameObject.GetComponent<ElevatorTeleporter>();
@@ -70,8 +74,10 @@ public class PlayerInteract: MonoBehaviour {
                 pickUp = null;
         }
         if (collision.gameObject.CompareTag("Interactable")) {
-            if(collision.gameObject == interactable)
+            if (collision.gameObject == interactable) {
                 interactable = null;
+                t.text = "";
+            }
         }
         if (collision.gameObject.CompareTag("Elevator")) {
             if(collision.gameObject.GetComponent<ElevatorTeleporter>() == elevator)

@@ -23,6 +23,7 @@ public class Interact : MonoBehaviour
         
     }
 
+
     public GameObject TurnOn(GameObject givenCog) {
         if (!hasCog) {
             cog = givenCog;
