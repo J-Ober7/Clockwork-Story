@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{49fd5031-c199-4bc9-9474-8c5087f8e4df}">
+		<property name="assetPath">
+			<value>SFX/object_sound/pulley_nometal.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.0378333333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c70e4027-5e53-4152-84dc-83c622228740}</destination>
+		</relationship>
+	</object>
+</objects>

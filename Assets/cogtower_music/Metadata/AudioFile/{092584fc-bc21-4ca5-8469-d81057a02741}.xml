@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{092584fc-bc21-4ca5-8469-d81057a02741}">
+		<property name="assetPath">
+			<value>MX/level_music/l1_loop.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>46</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c70e4027-5e53-4152-84dc-83c622228740}</destination>
+		</relationship>
+	</object>
+</objects>

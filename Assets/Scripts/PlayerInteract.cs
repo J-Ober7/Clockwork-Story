@@ -10,6 +10,12 @@ public class PlayerInteract: MonoBehaviour {
     public TextMeshProUGUI t;
     public Image tImage;
     public GameObject WinText;
+    [FMODUnity.EventRef]
+    public string GearDrop = "";
+    [FMODUnity.EventRef]
+    public string GearPlace = "";
+    [FMODUnity.EventRef]
+    public string GearPickup = "";
 
     private GameObject pickUp = null;
     private GameObject cogHeld = null;
@@ -30,6 +36,7 @@ public class PlayerInteract: MonoBehaviour {
                 if (cogHeld != null) {
                     cogHeld.transform.parent = oldCogHeldTransform;
                     cogHeld = null;
+                    FMODUnity.RuntimeManager.PlayOneShot(GearDrop);
                 }
                 else if (pickUp != null) {
                     cogHeld = pickUp;
@@ -37,6 +44,7 @@ public class PlayerInteract: MonoBehaviour {
                     cogHeld.transform.parent = transform;
                     cogHeld.transform.position = holdZone.transform.position;
                     pickUp = null;
+                    FMODUnity.RuntimeManager.PlayOneShot(GearPickup);
                 }
             }
 
@@ -44,10 +52,12 @@ public class PlayerInteract: MonoBehaviour {
                 if (interactable != null) {
                     if (cogHeld != null) {
                         cogHeld = interactable.GetComponent<Interact>().TurnOn(cogHeld);
+                        FMODUnity.RuntimeManager.PlayOneShot(GearPickup);
                     }
                     else {
                         cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
                         if (cogHeld != null) {
+                            FMODUnity.RuntimeManager.PlayOneShot(GearPickup);
                             cogHeld.GetComponent<BoxCollider2D>().enabled = true;
                             cogHeld.transform.parent = transform;
                             cogHeld.transform.position = holdZone.transform.position;
@@ -66,7 +76,7 @@ public class PlayerInteract: MonoBehaviour {
                 tImage.enabled = false;
             }
 
-            WinText.SetActive(false);
+            WinText.SetActive(true);
         }
 
     }

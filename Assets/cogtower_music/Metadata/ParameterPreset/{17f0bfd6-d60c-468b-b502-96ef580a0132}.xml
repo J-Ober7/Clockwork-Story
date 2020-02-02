@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{17f0bfd6-d60c-468b-b502-96ef580a0132}">
+		<property name="name">
+			<value>bell_stage</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a6078e9c-a8dc-45de-819c-71c8a688e2b3}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{de889e88-46d8-462c-8cca-b72ec4abb950}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{de889e88-46d8-462c-8cca-b72ec4abb950}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

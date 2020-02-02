@@ -1,0 +1,489 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6605804522648664619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/bellfall_2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/bellfall_2
+  guid: f0f945cfc8876c4ba9911daaf02692fe
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3700
+--- !u!114 &-6346940991923259126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/level_music
+  m_EditorClassIdentifier: 
+  Path: event:/MX/level_music
+  guid: a3a2b240eb5ce24790d3cf46caecdc54
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2128967943128621774}
+  - {fileID: 4845922715261723645}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 238000
+--- !u!114 &-6237456852234694417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/pulley_metal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/pulley_metal
+  guid: 251bd9d396b96942926a8b291ac16fab
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4555
+--- !u!114 &-4929444967258830322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level_music/win_state
+  m_EditorClassIdentifier: 
+  Name: win_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-2734231288993780737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/bellrise_2
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/bellrise_2
+  guid: 228ea792cb58cc47ab7b48b9e13e9615
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3900
+--- !u!114 &-2128967943128621774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level_music/bell_stage
+  m_EditorClassIdentifier: 
+  Name: bell_stage
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 1
+--- !u!114 &-1684940393689836943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/cyber/Documents/GitHub/TheCogTower/Assets/cogtower_music/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637162455562425496
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1756
+  Exists: 1
+--- !u!114 &-1020752165599675867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/bellfall_25
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/bellfall_25
+  guid: d33b4d7c27e8614b9da25d8097bc2660
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3700
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -1684940393689836943}
+  - {fileID: 3903781897765938812}
+  EditorEvents:
+  - {fileID: -2734231288993780737}
+  - {fileID: -6237456852234694417}
+  - {fileID: 580954010240499741}
+  - {fileID: 7044663957063887975}
+  - {fileID: 4024791894994004100}
+  - {fileID: 3941087440800155909}
+  - {fileID: 3760480992779480510}
+  - {fileID: -6346940991923259126}
+  - {fileID: 7498672884014131151}
+  - {fileID: 4414396977336568656}
+  - {fileID: -1020752165599675867}
+  - {fileID: 4465736264836227568}
+  - {fileID: 9165131843303813438}
+  - {fileID: -6605804522648664619}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 3903781897765938812}
+  StringsBanks:
+  - {fileID: -1684940393689836943}
+  stringsBankWriteTime: 637162455562425496
+  cacheVersion: 3
+--- !u!114 &127447776993772054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level_music/bell_stage
+  m_EditorClassIdentifier: 
+  Name: bell_stage
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 1
+--- !u!114 &580954010240499741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/win_music
+  m_EditorClassIdentifier: 
+  Path: event:/MX/win_music
+  guid: 543724010c9697489088e20ede58a8d0
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 11162
+--- !u!114 &1798252283616239658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/movement/player_move
+  m_EditorClassIdentifier: 
+  Name: player_move
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &3760480992779480510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ambience_sound/ambience
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ambience_sound/ambience
+  guid: 89ef8788e24e3044a6edcb77a8bf0a6d
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 216000
+--- !u!114 &3903781897765938812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/cyber/Documents/GitHub/TheCogTower/Assets/cogtower_music/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637162455562385599
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 6242720
+  Exists: 1
+--- !u!114 &3941087440800155909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/gearpickup
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/gearpickup
+  guid: 7c6acc5a35fb994ca164c8f8dca44743
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1480
+--- !u!114 &4024791894994004100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/bellchime
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/bellchime
+  guid: 727f0a6aa33eb34fb8b5b7b6030ddcfc
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 19806
+--- !u!114 &4414396977336568656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MX/level_music/leve_music
+  m_EditorClassIdentifier: 
+  Path: event:/MX/level_music/leve_music
+  guid: cbb33c1bc09419478b2782fc1a6e780b
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4465736264836227568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/gearplacement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/gearplacement
+  guid: dfa9c70e2d3d754d9067281f381cea86
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1320
+--- !u!114 &4845922715261723645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level_music/win_state
+  m_EditorClassIdentifier: 
+  Name: win_state
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &7044663957063887975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/bellrise_25
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/bellrise_25
+  guid: 5e3d807c5e51834d8a6f8ffd0fa17ba1
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &7498672884014131151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/player_sound/movement
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/player_sound/movement
+  guid: bddc79d53faf6f4d8569ede8c48ad0cf
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1798252283616239658}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6204
+--- !u!114 &9165131843303813438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/object_sound/sandbag
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/object_sound/sandbag
+  guid: eae71731834f6041a3c58e9a513fc201
+  Banks:
+  - {fileID: 3903781897765938812}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1629

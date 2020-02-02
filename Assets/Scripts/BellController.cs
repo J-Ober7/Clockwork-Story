@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class BellController : MonoBehaviour
 {
-    private int bellLevel;
-    private bool bellLocked;
+    [FMODUnity.EventRef]
+    public string BellRing = "";
     public GameObject bellBlock;
     private Animator anim;
+    private int bellLevel;
+    private bool bellLocked;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,11 @@ public class BellController : MonoBehaviour
     //Sets the lock state of the bell, bellLevel cannot change while locked
     public void LockBell(bool b) {
         bellLocked = b;
+    }
+
+    public void gameOverBell() {
+        anim.SetBool("GameOver", true);
+        FMODUnity.RuntimeManager.PlayOneShot(BellRing);
     }
 
     //Updates the floor of the bell if the bell is not locked
