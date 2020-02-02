@@ -33,7 +33,7 @@ public class BellController : MonoBehaviour
         if (!bellLocked) {
             bellLevel = level;
             anim.SetInteger("Bell Level", bellLevel);
-            StartCoroutine(TemporarilyDeactivate(2));
+            StartCoroutine(TemporarilyDeactivate(1.5f));
         }
     }
 

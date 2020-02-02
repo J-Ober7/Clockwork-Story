@@ -9,8 +9,7 @@ public class PlayerInteract: MonoBehaviour {
     public GameObject holdZone;
     public TextMeshProUGUI t;
     public Image tImage;
-    public TextMeshProUGUI WinText;
-    public Image wImage;
+    public GameObject WinText;
 
     private GameObject pickUp = null;
     private GameObject cogHeld = null;
@@ -21,7 +20,7 @@ public class PlayerInteract: MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        wImage.enabled = false;
+        WinText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -67,9 +66,7 @@ public class PlayerInteract: MonoBehaviour {
                 tImage.enabled = false;
             }
 
-            WinText.enabled = true;
-            WinText.text = "You Win!";
-            wImage.enabled = true;
+            WinText.SetActive(false);
         }
 
     }
