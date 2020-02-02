@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 8c13e147c336b9246a1b25ad67eb1657
+guid: 83f9bbf6bff878343958c98faee01b5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5597737341398333467
-    second: MouseWalk_0
+      213: -2089175020497060647
+    second: Mouse Idel_0
   - first:
-      213: -2681443595098123128
-    second: MouseWalk_1
+      213: -5115226276693458209
+    second: Mouse Idel_1
   - first:
-      213: -2273872165745005064
-    second: MouseWalk_2
+      213: 5221871862103113922
+    second: Mouse Idel_2
   - first:
-      213: 2986989930587319824
-    second: MouseWalk_3
+      213: 2915412498318159320
+    second: Mouse Idel_3
   - first:
-      213: -8732174927537502446
-    second: MouseWalk_4
+      213: -2414234501587750869
+    second: Mouse Idel_4
   - first:
-      213: -1088272808523499320
-    second: MouseWalk_5
+      213: 2268030211618101349
+    second: Mouse Idel_5
   - first:
-      213: 3969301969330713810
-    second: MouseWalk_6
+      213: -2358888903856998793
+    second: Mouse Idel_6
   - first:
-      213: -7549707230858451558
-    second: MouseWalk_7
+      213: 179963337501895690
+    second: Mouse Idel_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,7 +96,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MouseWalk_0
+      name: Mouse Idel_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,83 +130,83 @@ TextureImporter:
         width: 143
         height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc8eb1c64c7766141aac94840af992fa
-      internalID: -5597737341398333467
+      spriteID: 9157a064d9958574591ed740f8895db2
+      internalID: -2089175020497060647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_1
+      name: Mouse Idel_1
       rect:
         serializedVersion: 2
         x: 147
         y: 0
-        width: 145
+        width: 146
         height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed887497af17cd9499cdefb38038192c
-      internalID: -2681443595098123128
+      spriteID: acc6a8a631daa4a4faf5e9521c3f18e7
+      internalID: -5115226276693458209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_2
+      name: Mouse Idel_2
       rect:
         serializedVersion: 2
-        x: 293
+        x: 297
         y: 0
-        width: 149
+        width: 146
+        height: 57
+      alignment: 9
+      pivot: {x: 0.47, y: 0.61}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4150e8acc0ebbd64dada330ddbe634c1
+      internalID: 5221871862103113922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouse Idel_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 146
         height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183222e4d89656b49a9bb7a76559d3c2
-      internalID: -2273872165745005064
+      spriteID: 5f12fb40b5e7fa446950dab311729d5d
+      internalID: 2915412498318159320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_3
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 0
-        width: 150
-        height: 66
-      alignment: 9
-      pivot: {x: 0.47, y: 0.62}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0dd99b98f87474f469ba11c1e6a4083a
-      internalID: 2986989930587319824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MouseWalk_4
+      name: Mouse Idel_4
       rect:
         serializedVersion: 2
         x: 597
@@ -214,77 +214,77 @@ TextureImporter:
         width: 146
         height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98ef62ae4fc6d784ca2b4a116aea8ee1
-      internalID: -8732174927537502446
+      spriteID: e3b3fe322d0ff6542b80d691f724f656
+      internalID: -2414234501587750869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_5
+      name: Mouse Idel_5
       rect:
         serializedVersion: 2
         x: 747
         y: 0
-        width: 145
+        width: 146
         height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82683299f2779b547bd28ce1abaaa1fa
-      internalID: -1088272808523499320
+      spriteID: b6d590e67b0ef784a82011b2a0510056
+      internalID: 2268030211618101349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_6
+      name: Mouse Idel_6
       rect:
         serializedVersion: 2
-        x: 893
+        x: 897
         y: 0
-        width: 149
-        height: 61
+        width: 146
+        height: 57
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d2db570237d2f14b9f9b0a3c657aab2
-      internalID: 3969301969330713810
+      spriteID: 06ae83d15293ec84691afecfa16a2f23
+      internalID: -2358888903856998793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MouseWalk_7
+      name: Mouse Idel_7
       rect:
         serializedVersion: 2
-        x: 1043
+        x: 1047
         y: 0
-        width: 142
-        height: 66
+        width: 138
+        height: 61
       alignment: 9
-      pivot: {x: 0.47, y: 0.62}
+      pivot: {x: 0.47, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71cecc72d711b124e8a6e881feb1a9ee
-      internalID: -7549707230858451558
+      spriteID: ce9828c78ce61fd4db170d45f0cac622
+      internalID: 179963337501895690
       vertices: []
       indices: 
       edges: []
