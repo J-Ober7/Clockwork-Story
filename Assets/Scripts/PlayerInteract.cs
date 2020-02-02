@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class PlayerInteract: MonoBehaviour {
     public GameObject holdZone;
-    public Text t;
-    public Text WinText;
+    public TextMeshProUGUI t;
+    public Image tImage;
+    public TextMeshProUGUI WinText;
+    public Image wImage;
 
     private GameObject pickUp = null;
     private GameObject cogHeld = null;
@@ -18,6 +21,7 @@ public class PlayerInteract: MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
+        wImage.enabled = false;
     }
 
     // Update is called once per frame
@@ -60,8 +64,12 @@ public class PlayerInteract: MonoBehaviour {
         else {
             if (t != null) {
                 t.enabled = false;
+                tImage.enabled = false;
             }
+
+            WinText.enabled = true;
             WinText.text = "You Win!";
+            wImage.enabled = true;
         }
 
     }
@@ -73,6 +81,7 @@ public class PlayerInteract: MonoBehaviour {
         if (collision.gameObject.CompareTag("Interactable")) {
             interactable = collision.gameObject;
             t.text = collision.gameObject.GetComponent<Interact>().hint;
+            tImage.enabled = true;
         }
         if (collision.gameObject.CompareTag("Elevator")) {
             elevator = collision.gameObject.GetComponent<ElevatorTeleporter>();
@@ -88,6 +97,7 @@ public class PlayerInteract: MonoBehaviour {
             if (collision.gameObject == interactable) {
                 interactable = null;
                 t.text = "";
+                tImage.enabled = false;
             }
         }
         if (collision.gameObject.CompareTag("Elevator")) {
