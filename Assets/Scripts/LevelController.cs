@@ -14,7 +14,7 @@ public class LevelController : MonoBehaviour
     public BellController Bell;
     public GameObject Elevator1;
     public GameObject Elevator2;
-    public static bool gameOver;
+    public static bool gameWin;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class LevelController : MonoBehaviour
         E1Level = 0;
         E2Level = 0;
         lockLevel = 0;
+        gameWin = false;
 
     }
 
@@ -55,6 +56,11 @@ public class LevelController : MonoBehaviour
         else if (ID.Equals("ED")) {
             E1Level++;
             E2Level++;
+        }
+        else if (ID.Equals("Ring")) {
+            if(bellLevel == 2 || lockLevel == 2) {
+                gameWin = true;
+            }
         }
     }
     public bool Decrease(string ID) {

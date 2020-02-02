@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerInteract: MonoBehaviour {
     public GameObject holdZone;
-    public  Text t;
+    public Text t;
+    public Text WinText;
 
     private GameObject pickUp = null;
     private GameObject cogHeld = null;
@@ -21,38 +22,48 @@ public class PlayerInteract: MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetButtonDown("Grab")) {
-            if (cogHeld != null) {
-                cogHeld.transform.parent = oldCogHeldTransform;
-                cogHeld = null;
-            } else if (pickUp != null) {
-                cogHeld = pickUp;
-                oldCogHeldTransform = cogHeld.transform.parent;
-                cogHeld.transform.parent = transform;
-                cogHeld.transform.position = holdZone.transform.position;
-                pickUp = null;
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if(interactable != null) {
-                if(cogHeld != null) {
-                    cogHeld = interactable.GetComponent<Interact>().TurnOn(cogHeld);
+        if (!LevelController.gameWin) {
+            if (Input.GetButtonDown("Grab")) {
+                if (cogHeld != null) {
+                    cogHeld.transform.parent = oldCogHeldTransform;
+                    cogHeld = null;
                 }
-                else {
-                    cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
-                    if(cogHeld != null) {
-                        cogHeld.GetComponent<BoxCollider2D>().enabled = true;
-                        cogHeld.transform.parent = transform;
-                        cogHeld.transform.position = holdZone.transform.position;
+                else if (pickUp != null) {
+                    cogHeld = pickUp;
+                    oldCogHeldTransform = cogHeld.transform.parent;
+                    cogHeld.transform.parent = transform;
+                    cogHeld.transform.position = holdZone.transform.position;
+                    pickUp = null;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.E)) {
+                if (interactable != null) {
+                    if (cogHeld != null) {
+                        cogHeld = interactable.GetComponent<Interact>().TurnOn(cogHeld);
+                    }
+                    else {
+                        cogHeld = interactable.GetComponent<Interact>().TurnOff(cogHeld);
+                        if (cogHeld != null) {
+                            cogHeld.GetComponent<BoxCollider2D>().enabled = true;
+                            cogHeld.transform.parent = transform;
+                            cogHeld.transform.position = holdZone.transform.position;
+                        }
                     }
                 }
-            }
-            if (elevator != null) {
-                Vector3 elevatorPosition = elevator.other.transform.position;
-                transform.position = new Vector3(elevatorPosition.x, elevatorPosition.y, transform.position.z);
+                if (elevator != null) {
+                    Vector3 elevatorPosition = elevator.other.transform.position;
+                    transform.position = new Vector3(elevatorPosition.x, elevatorPosition.y, transform.position.z);
+                }
             }
         }
+        else {
+            if (t != null) {
+                t.enabled = false;
+            }
+            WinText.text = "You Win!";
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

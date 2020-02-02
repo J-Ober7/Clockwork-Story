@@ -20,14 +20,17 @@ public class PlayerController: MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * baseVelocity, rigidbody2D.velocity.y);
-		if (Input.GetButtonDown("Jump") && groundDetecter.onGround)
-			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
-		if (rigidbody2D.velocity.x != 0) {
-			anim.SetBool("Walking", true);
-			transform.localScale = new Vector3(rigidbody2D.velocity.x < 0 ? -defaultXScale : defaultXScale, transform.localScale.y, 1);
-		}else {
-			anim.SetBool("Walking", false);
+		if (!LevelController.gameWin) {
+			rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * baseVelocity, rigidbody2D.velocity.y);
+			if (Input.GetButtonDown("Jump") && groundDetecter.onGround)
+				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, jumpPower);
+			if (rigidbody2D.velocity.x != 0) {
+				anim.SetBool("Walking", true);
+				transform.localScale = new Vector3(rigidbody2D.velocity.x < 0 ? -defaultXScale : defaultXScale, transform.localScale.y, 1);
+			}
+			else {
+				anim.SetBool("Walking", false);
+			}
 		}
 	}
 }
