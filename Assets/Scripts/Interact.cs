@@ -28,6 +28,7 @@ public class Interact : MonoBehaviour
             cog = givenCog;
             hasCog = true;
             lvlc.Increase(ID);
+            cog.GetComponent<Animator>().SetBool("Spin", true);
             cog.GetComponent<BoxCollider2D>().enabled = false;
             cog.transform.parent = transform;
             cog.transform.position = transform.position;
@@ -44,6 +45,7 @@ public class Interact : MonoBehaviour
         }
         else if (lvlc.Decrease(ID)) {
             GameObject temp = cog;
+            cog.GetComponent<Animator>().SetBool("Spin", false);
             cog = null;
             hasCog = false;
             return temp;
