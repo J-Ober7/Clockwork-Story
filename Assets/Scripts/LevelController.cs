@@ -56,12 +56,9 @@ public class LevelController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    //Handles whenever a Switch has a Cog placed on it and updates the level state
+    //string ID -> Identifier for which switch is being affected
     public void Increase(string ID) {
 
         if (ID.Equals("Bell")) {
@@ -124,6 +121,8 @@ public class LevelController : MonoBehaviour
             }
         }
     }
+    //Handles whenever a Switch has a Cog removed from it and updates the level state
+    //string ID -> Identifier for which switch is being affected
     public bool Decrease(string ID) {
         if (ID.Equals("Bell")) {
             if (!bellLocked) {
@@ -176,6 +175,8 @@ public class LevelController : MonoBehaviour
 
         return true;
     }
+
+    //Coorutine helper to delay loading Endscreen at the end of the level
     private IEnumerator TemporarilyDeactivate(float duration) {
         yield return new WaitForSeconds(duration);
         SceneManager.LoadScene("EndScreen");

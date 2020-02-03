@@ -23,7 +23,7 @@ public class Interact : MonoBehaviour
         
     }
 
-
+    //Logic for switches to turn on and apply the appropriate effects
     public GameObject TurnOn(GameObject givenCog) {
         if (!hasCog) {
             cog = givenCog;
@@ -40,6 +40,7 @@ public class Interact : MonoBehaviour
         return null;
     }
 
+    //Logic for switches to turn off and disable their effects
     public GameObject TurnOff(GameObject givenCog) {
         if (!hasCog) {
             return givenCog;

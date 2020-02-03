@@ -44,7 +44,8 @@ public class BellController : MonoBehaviour
         }
     }
 
-
+    //Cooroutine helper to enable and disable a invisible wall as the bell is moving to prevent 
+    //players from trapping themselves
     private IEnumerator TemporarilyDeactivate(float duration) {
         bellBlock.SetActive(true);
         yield return new WaitForSeconds(duration);

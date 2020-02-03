@@ -11,10 +11,14 @@ public class PlayGame : MonoBehaviour
     private void Start() {
         FMODUnity.RuntimeManager.PlayOneShot(Win);
     }
+
+    //for Main Menu Button to load the game scene
     public void PlayCogTower() {
         SceneManager.LoadScene("CogTower");
     }
 
+
+    //for Main Menu and Endscreen Button to quit the game
     public void ExitGame() {
         Application.Quit();
     }

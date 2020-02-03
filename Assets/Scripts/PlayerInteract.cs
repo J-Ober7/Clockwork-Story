@@ -32,6 +32,7 @@ public class PlayerInteract: MonoBehaviour {
     }
 
     // Update is called once per frame
+    //Handles Player E and Q inputs, for interacting with the world and picking up and dropping cogs respectively
     void Update() {
         if (!LevelController.gameWin) {
             if (Input.GetButtonDown("Grab")) {
@@ -84,6 +85,7 @@ public class PlayerInteract: MonoBehaviour {
 
     }
 
+    //Determines what trigger the player has hit and stores them as needed 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("PickUp")) {
             pickUp = collision.gameObject;
@@ -98,6 +100,8 @@ public class PlayerInteract: MonoBehaviour {
         }
     }
 
+
+    //Determines what trigger the player is leave to remove them as needed
     private void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("PickUp")) {
             if (collision.gameObject == pickUp)

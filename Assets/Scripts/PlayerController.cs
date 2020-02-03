@@ -24,6 +24,7 @@ public class PlayerController: MonoBehaviour {
 	}
 
 	// Update is called once per frame
+	//Player movement, disabled when the game is won.
 	void Update() {
 		if (!LevelController.gameWin) {
 			rigidbody2D.velocity = new Vector2(Input.GetAxis("Horizontal") * baseVelocity, rigidbody2D.velocity.y);
